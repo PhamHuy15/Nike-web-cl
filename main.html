@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/normallize.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+            rel="stylesheet"
+        />
+        <title>Nike. Just Do It. Nike.com</title>
+    </head>
+    <body>
+        <div class="main">
+            <header class="header">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <a class="navbar__logo">
+                        <svg class="navbar__logo-item" height="24px" width="24px" fill="#111" viewBox="0 0 26 32">
+                            <path
+                                d="M14.4 5.52v-.08q0-.56.36-1t.92-.44 1 .36.48.96-.36 1-.96.4l-.24.08.08.12-.08.44-.16 1.28q.08.08.08.16l-.16.8q-.08.16-.16.24l-.08.32q-.16.64-.28 1.04t-.2.64V12q-.08.4-.12.64t-.28.8q-.16.32 0 1.04l.08.08q0 .24.2.56t.2.56q.08 1.6-.24 2.72l.16.48q.96.48.56 1.04l.4.16q.96.48 1.36.84t.8.76q.32.08.48.24l.24.08q1.68 1.12 3.36 2.72l.32.24v.08l-.08.16.24.16h.08q.24.16.32.16h.08q.08 0 .16-.08l.16-.08q.16-.16.32-.24h.32q.08 0 0 .08l-.32.16-.4.48h.56l.56.08q.24-.08.4-.16l.4-.24q.24-.08.48.16h.08q.08.08-.08.24l-.96.88q-.4.32-.72.4l-1.04.72q-.08.08-.16 0l-.24-.32-.16-.32-.2-.28-.24-.32-.2-.24-.16-.2-.32-.24q-.16 0-.32-.08l-1.04-.8q-.24 0-.56-.24-1.2-1.04-1.6-1.28l-.48-.32-.96-.16q-.48-.08-1.28-.48l-.64-.32q-.64-.32-.88-.32l-.32-.16q-.32-.08-.48-.16l-.16-.16q-.16 0-.32.08l-1.6.8-2 .88q-.8.64-1.52 1.04l-.88.4-1.36.96q-.16.16-.32 0l-.16.16q-.24.08-.32.08l-.32.16v.16h-.16l-.16.24q-.16.32-.32.36t-.2.12-.08.12l-.16.16-.24.16-.36-.04-.48.08-.32.08q-.4.08-.64-.12t-.4-.6q-.16-.24.16-.4l.08-.08q.08-.08.24-.08h.48L1.6 26l.32-.08q0-.16.08-.24.08-.08.24-.08v-.08q-.08-.16-.08-.32-.08-.16-.04-.24t.08-.08h.04l.08.24q.08.4.24.24l.08-.16q.08-.16.24-.16l.16.16.16-.16-.08-.08q0-.08.08-.08l.32-.32q.4-.48.96-.88 1.12-.88 2.4-1.36.4-.4.88-.4.32-.56.96-1.2.56-.4.8-.56.16-.32.4-.32H10l.16-.16q.16-.08.24-.16v-.4q0-.4.08-.64t.4-.24l.32-.32q-.16-.32-.16-.72h-.08q-.16-.24-.16-.48-.24-.4-.32-.64h-.24q-.08.24-.4.32l-.08.16q-.32.56-.56.84t-.88.68q-.4.4-.56.88-.08.24 0 .48l-.08.16h.08q0 .16.08.16h.08q.16.08.16.2t-.24.08-.36-.16-.2-.12l-.24.24q-.16.24-.32.2t-.08-.12l.08-.08q.08-.16 0-.16l-.64.16q-.08.08-.2 0t.04-.16l.4-.16q0-.08-.08-.08-.32.16-.64.08l-.4-.08-.08-.08q0-.08.08-.08.32.08.8-.08l.56-.24.64-.72.08-.16q.32-.64.68-1.16t.76-.84l.08-.32q.16-.32.32-.56t.4-.64l.24-.32q.32-.48.72-.48l.24-.24q.08-.08.08-.24l.16-.16-.08-.08q-.48-.4-.48-.72-.08-.56.36-.96t.88-.36.68.28l.16.16q.08 0 .08.08l.32.16v.24q.16.16.16.24.16-.24.48-.56l.4-1.28q0-.32.16-.64l.16-.24v-.16l.24-.96h.16l.24-.96q.08-.24 0-.56l-.32-.8z"
+                            ></path>
+                        </svg>
+                        <svg class="navbar__logo-item" height="24px" width="24px" fill="#111" viewBox="0 0 39 33">
+                            <path
+                                d="M10.94 25.626l-4.236-5.501L.201 22.28l3.734-5.756L.11 10.777l6.59 2.031 4.026-5.474.14 6.785 6.64 2.175-6.594 2.446.028 6.886zm.824 7.239l13.952-16.393L11.806.107h11.697l14.871 16.389-14.8 16.369h-11.81z"
+                            ></path>
+                        </svg>
+                    </a>
+
+                    <ul class="navbar-list">
+                        <li class="navbar-item navbar-item--separate">
+                            <a href="" class="navbar-item__link">Help</a>
+                            <div class="navbar-help">
+                                <h3 class="navbar-help-heading">Help</h3>
+                                <ul class="navbar-help-list">
+                                    <li class="navbar-help-item">
+                                        <a href="" class="navbar-help-item-link">Order Status</a>
+                                    </li>
+
+                                    <li class="navbar-help-item">
+                                        <a href="" class="navbar-help-item-link">Shipping & Delivery</a>
+                                    </li>
+
+                                    <li class="navbar-help-item">
+                                        <a href="" class="navbar-help-item-link">Returns</a>
+                                    </li>
+
+                                    <li class="navbar-help-item">
+                                        <a href="" class="navbar-help-item-link">Size Charts</a>
+                                    </li>
+
+                                    <li class="navbar-help-item">
+                                        <a href="" class="navbar-help-item-link">Contact Us</a>
+                                    </li>
+
+                                    <li class="navbar-help-item">
+                                        <a href="" class="navbar-help-item-link">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-item navbar-item--separate">
+                            <a href="" class="navbar-item__link">Join Us</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="" class="navbar-item__link">Sign In</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <div class="header__search-back-menu">
+                        <a href="">
+                            <svg class="pre-logo-svg" height="60px" width="60px" fill="#111" viewBox="0 0 69 32">
+                                <path
+                                    d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <ul class="header__search-list hide-on-mobile-tablet">
+                        <li href="" class="header__search-item">
+                            <a href="" class="header__search-item-link">New & Featured</a>
+                            <ul class="header__menu">
+                                <h3 class="header__menu-heading">New</h3>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> Shoes</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Closing</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> Skip to main content</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Equidment</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li href="" class="header__search-item">
+                            <a href="" class="header__search-item-link">Men</a>
+                            <ul class="header__menu">
+                                <h3 class="header__menu-heading">Shoes</h3>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> All Shoes</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Lifestyle</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Running</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Basketball</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li href="" class="header__search-item">
+                            <a href="" class="header__search-item-link">Women</a>
+                            <ul class="header__menu">
+                                <h3 class="header__menu-heading">Hoodies & Sweatshirts</h3>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> Jackets & Vests</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Clothing $50 & Under</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Sustainable Materials</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Nike Maternity</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li href="" class="header__search-item">
+                            <a href="" class="header__search-item-link">Kids</a>
+                            <ul class="header__menu">
+                                <h3 class="header__menu-heading">Big Kids</h3>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> Little kids</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Babies & Toddlers</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Bags & Backpacks</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Hats </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li href="" class="header__search-item">
+                            <a href="" class="header__search-item-link">Sale</a>
+                            <ul class="header__menu">
+                                <h3 class="header__menu-heading">New Markdowns: Up to 40% off</h3>
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> Shoes</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Closing</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link"> Skip to main content</a>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-item-link">Equidment</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="header__search-input hide-on-mobile-tablet">
+                        <span class="header__search-input-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" placeholder="Search" class="header__search-input-btn" />
+                    </div>
+
+                    <!-- hien search box khi go vao input -->
+                    <div class="search__layout h-1000px hide">
+                        <div class="search__layout-heading">
+                            <div class="search__layout-logo">
+                                <svg
+                                    class="modal__header-logo-img"
+                                    height="60px"
+                                    widt
+                                    h="60px"
+                                    fill="#111"
+                                    viewBox="0 0 69 32"
+                                >
+                                    <path
+                                        d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <div class="search__layout-input">
+                                <i class="fa-solid fa-magnifying-glass search__layout-input--icon"></i>
+                                <input autofocus type="text" placeholder="Search" />
+                                <i class="fa-solid fa-x delete-all"></i>
+                            </div>
+
+                            <button class="out-search">Cancel</button>
+                        </div>
+
+                        <div>
+                            <div class="search__layout-box">
+                                <div class="search-box-header">Popular Search Terms</div>
+                                <ul class="search-box__list">
+                                    <li class="search-box--item">Jordan 1</li>
+                                    <li class="search-box--item">Air Force 1 1</li>
+                                    <li class="search-box--item">Air Max</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row search-box-product__container"></div>
+                    </div>
+                    <!-- END search box layout -->
+
+                    <div class="header__search-icon hide-on-mobile-tablet">
+                        <i class="fa-regular fa-heart header__search-icon--like"></i>
+                        <i class="fa-solid fa-bag-shopping header__search-icon--cart"> </i>
+                        <div class="cart__container hide">
+                            <div class="cart__heaeder">
+                                <div class="shopping-cart-title">Shopping Bag</div>
+                                <button class="close-cart">
+                                    <i class="fa-solid fa-x"></i>
+                                </button>
+                            </div>
+
+                            <div class="shopping-cart">
+                                <!-- Product  -->
+                            </div>
+                            <d iv class="cart-totals">
+                                <span class="totals-text">Total:</span>
+                                <span class="totals-price">
+                                    <span>999</span>
+                                </span>
+                            </d>
+                        </div>
+                    </div>
+
+                    <div class="nav__mobile">
+                        <div class="nav__mobile-icon">
+                            <div class="nav__mobile-cart">
+                                <i class="fa-solid fa-bag-shopping nav__mobile-cart-icon"></i>
+                                <div class="cart__container hide">
+                                    <div class="cart__heaeder">
+                                        <div class="shopping-cart-title">Shopping Bag</div>
+                                        <button class="close-cart">
+                                            <i class="fa-solid fa-x"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="shopping-cart">
+                                        <!-- Product  -->
+                                    </div>
+                                    <div class="cart-totals">
+                                        <span class="totals-text">Total:</span>
+                                        <span class="totals-price">
+                                            <span>999</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="nav__bars-search-mobile">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <label for="nav-bars-mobile-button" class="nav__bars-mobile">
+                                <i class="fa-solid fa-bars"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <!-- phan overlay khi bat gio hang -->
+                <div class="modal__overlay hide"></div>
+                <!-- end overlay -->
+
+                <div class="container__introduce">
+                    <div class="container__introduce-item">
+                        <h3 class="container__introduce-item-heading">Limited Time: Earn $75 with a new Apple Card.</h3>
+                        <p class="container__introduce-item-about">
+                            <a href="" class="container__item-about">Learn More.</a>
+                            Terms Apply.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- slider -->
+                <div class="grid wide">
+                    <a class="slider__link">
+                        <div class="slider hide-on-mobile">
+                            <div class="slider-text">
+                                <h4 class="slider-text-introduce hide-on-mobile-tablet">Zoom Freak 4</h4>
+
+                                <!-- slider text tablet -->
+                                <div class="slider-text-tablet hide-on-pc">
+                                    <h4 class="slider-text-introduce__tablet">
+                                        Zoom Freak
+                                        <br />
+                                        4
+                                    </h4>
+
+                                    <p class="slider-text-about__tablet">
+                                        From unknown to unbelievable, propel your
+                                        <br />
+                                        game forward with 4% tilted Zoom.
+                                    </p>
+
+                                    <button class="btn-dark">Shop</button>
+                                </div>
+                                <!-- end slider mobile -->
+                                <p class="slider-text-about hide-on-mobile-tablet">
+                                    Propel your game forward with 4% tilted Zoom.
+                                </p>
+                                <button href="" class="btn-dark hide-on-mobile-tablet">Show all basketballs</button>
+                            </div>
+                        </div>
+
+                        <!-- slider mobile -->
+                        <a href="" class="slider__mobile">
+                            <div class="col c-12">
+                                <img
+                                    src="./assets/img/shoe/nike-zoom-freak-4-laser-blue-lilac-light-menta-DJ6149-400.webp"
+                                    alt=""
+                                    class="slider__mobile-img"
+                                />
+                                <div class="slider__mobile-text">
+                                    <h4 class="slidder__mobile-introduce-heading">Zoom Freak 4</h4>
+                                    <p class="slider__mobile-about">
+                                        From unknown to unbelievable, propel your
+                                        <br />
+                                        game forward with 4% tilted Zoom.
+                                    </p>
+                                    <button class="btn-dark">Shop</button>
+                                </div>
+                            </div>
+                        </a>
+                    </a>
+                </div>
+
+                <!-- product -->
+                <div class="product">
+                    <div class="grid wide">
+                        <div class="product-heading">
+                            <h3 class="product-heading-slogan">Icons for Everyone</h3>
+                        </div>
+
+                        <!-- product item -->
+                        <div class="product__classify">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12">
+                                    <a
+                                        href="https://www.nike.com/vn/w?q=blazer&vst=blaz"
+                                        class="product__classify-item"
+                                    >
+                                        <div class="product__classify-item--fist">
+                                            <img
+                                                src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/ece146cd-c49e-4d39-a0a0-9885b40c67ac/nike-just-do-it.jpg"
+                                                alt=""
+                                                class="product__classify-item-img"
+                                            />
+                                            <div class="product__classify-item--buy">
+                                                <h4 class="product__classify-item-introduce">Blazers</h4>
+                                                <button class="btn-light product__classify-item-btn">Shop</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-6 m-6 c-12">
+                                    <a
+                                        href="https://www.nike.com/vn/w?q=air%20force%201&vst=air"
+                                        class="product__classify-item"
+                                    >
+                                        <div class="product__classify-item--section">
+                                            <img
+                                                src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/fffa61e1-01de-4f22-8f9e-5a629ef4561b/nike-just-do-it.jpg"
+                                                alt=""
+                                                class="product__classify-item-img"
+                                            />
+                                            <div class="product__classify-item--buy">
+                                                <h4 class="product__classify-item-introduce">Air Force 1</h4>
+                                                <button href="" class="btn-light product__classify-item-btn">
+                                                    Shop
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://www.nike.com/vn/w/air-max-shoes-a6d8hzy7ok?vst=Air%20Max"
+                                        class="product__classify-item"
+                                    >
+                                        <div class="product__classify-item--section">
+                                            <img
+                                                src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/4b384cc6-afd1-4613-9cc9-cbaf35b97336/nike-just-do-it.jpg"
+                                                alt=""
+                                                class="product__classify-item-img"
+                                            />
+                                            <div class="product__classify-item--buy">
+                                                <h4 class="product__classify-item-introduce">Air Max</h4>
+                                                <button href="" class="btn-light product__classify-item-btn">
+                                                    Shop
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__classify product__classify-running">
+                            <div class="product-heading">
+                                <h3 class="product-heading-slogan">Let's Go Running</h3>
+                            </div>
+
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12">
+                                    <a
+                                        href="https://www.nike.com/vn/w?q=zoomx&vst=zoomX"
+                                        class="product__classify-item"
+                                    >
+                                        <div class="product__classify-item--fist">
+                                            <img
+                                                src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/0c39bbc1-df34-4f52-b4e2-8aaddd6dc979/nike-just-do-it.jpg"
+                                                alt=""
+                                                class="product__classify-item-img"
+                                            />
+                                            <div class="product__classify-item--buy">
+                                                <h4 class="product__classify-item-introduce">
+                                                    The New ZoomX
+                                                    <br />
+                                                    Zegama TRail
+                                                </h4>
+                                                <button href="" class="btn-light product__classify-item-btn">
+                                                    Shop
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-6 m-6 c-12">
+                                    <a
+                                        href="https://www.nike.com/vn/w?q=zoomx&vst=zoomX"
+                                        class="product__classify-item"
+                                    >
+                                        <div class="product__classify-item--fist">
+                                            <img
+                                                src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/35447d79-c03d-4076-930f-0260032caa5e/nike-just-do-it.jpg"
+                                                alt=""
+                                                class="product__classify-item-img"
+                                            />
+                                            <div class="product__classify-item--buy">
+                                                <h4 class="product__classify-item-introduce">
+                                                    Ready for Hight-Mileage:
+                                                    <br />
+                                                    air zoom vomero 16
+                                                </h4>
+
+                                                <div class="product__classify-item--running__btn">
+                                                    <button href="" class="btn-light product__classify-item-btn">
+                                                        Shop
+                                                    </button>
+                                                    <button
+                                                        href=""
+                                                        class="btn-light product__classify-item-btn hide-on-mobile-tablet"
+                                                    >
+                                                        Find Your Running Shoe
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__classify-football">
+                            <div class="product-heading">
+                                <h3 class="product-heading-slogan">New from Nike Soccer</h3>
+                            </div>
+
+                            <div class="product__classify-soccer hide-on-mobile">
+                                <a href="" class="product__classify-soccer-about">
+                                    <h3 class="product__classify-soccer-introduce">
+                                        The New U.S.Soccer
+                                        <br />
+                                        National Team Kit
+                                    </h3>
+                                    <p class="product__classify-soccer-slogan">Our belife never done</p>
+                                    <div class="product__classify-soccer-btn">
+                                        <button class="btn-dark">Shop</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- product__classify-soccer__mobile -->
+                            <div class="product__classify-soccer__mobile">
+                                <a href="" class="product__classify-soccer__mobile-about">
+                                    <img
+                                        src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/1ac1ef70-731b-41fe-9537-decd9f1584d7/nike-just-do-it.jpg"
+                                        alt=""
+                                        class="product__classify-soccer__mobile-img"
+                                    />
+                                    <div class="product__classify-socce__mobile-introduce">
+                                        The New U.S.Soccer National Team Kit
+                                    </div>
+                                    <p class="product__classify-soccer__mobile-slogan">Our belife never done</p>
+                                    <button class="btn-dark product__classify-soccer__mobile-btn">Shop</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product__classify">
+                            <div class="product-heading">
+                                <h3 class="product-heading-slogan">Popurlar Right Now</h3>
+                                <!-- <div class="product-heading-control">
+                                    <button class="product-heading-control--btn prve-btn">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </button>
+
+                                    <button
+                                        class="product-heading-control--btn next-btn product-heading-control--btn__active"
+                                    >
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div> -->
+                            </div>
+
+                            <!-- phan danh sach cac san pham la shoes -->
+                            <div class="row product__classify-list"></div>
+                        </div>
+
+                        <div class="product__classify product__classify-clothers">
+                            <div class="product-heading">
+                                <h3 class="product-heading-slogan">Popular Clothers</h3>
+                            </div>
+
+                            <!-- danh sachc cac san pham la clothers -->
+                            <div class="row product__classify-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="business">
+                    <div class="business__body">
+                        <h3 class="business-item-heading">Featured</h3>
+                        <ul class="business-list hide-on-mobile">
+                            <li class="business-item">
+                                <a href="" class="business-item__link"> Air Force 1</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Jordan 1</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Air Max 2090</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Air Max 270</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="business__body">
+                        <h3 class="business-item-heading">Shoes</h3>
+                        <ul class="business-list hide-on-mobile">
+                            <li class="business-item">
+                                <a href="" class="business-item__link">All Shoes</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Jordan Shoes</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Running Shoes</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Basketball Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="business__body">
+                        <h3 class="business-item-heading">Clothing</h3>
+                        <ul class="business-list hide-on-mobile">
+                            <li class="business-item">
+                                <a href="" class="business-item__link">All Clothing</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Jordan 1</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Shorts</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Hoodies & Pullovers</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="business__body">
+                        <h3 class="business-item-heading">Kids'</h3>
+                        <ul class="business-list hide-on-mobile">
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Infant & Toddler Shoes</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Kids' Shoes</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Kids' Basketball Shoes</a>
+                            </li>
+                            <li class="business-item">
+                                <a href="" class="business-item__link">Kids' Running Shoes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="grid wide">
+                    <div class="footer__body">
+                        <div class="row">
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">GIFT CARDS</a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">PROMOTIONS</a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">FIND A STORE</a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">SIGN UP FOR EMAIL</a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">BECOME A MEMBER</a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">NIKE JOURNAL</a>
+                                </li>
+
+                                <li class="footer-item">
+                                    <a href="" class="footer-item-link">SEND US FEEDBACK</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer-help-list">
+                                <h3 class="footer-help-heading">
+                                    GET HELP
+                                    <div class="footer__mobile-help-heading-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </h3>
+                                <li class="footer-help-item">
+                                    <a href="" class="footer-help-link">Order Status</a>
+                                </li>
+
+                                <li class="footer-help-item">
+                                    <a href="" class="footer-help-link">Shipping and Delivery</a>
+                                </li>
+
+                                <li class="footer-help-item">
+                                    <a href="" class="footer-help-link">Payment Options</a>
+                                </li>
+
+                                <li class="footer-help-item">
+                                    <a href="" class="footer-help-link">Gift Card Balance</a>
+                                </li>
+
+                                <li class="footer-help-item">
+                                    <a href="" class="footer-help-link">Order Status</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer__about-list">
+                                <h3 class="footer__about-heading">
+                                    ABOUT NIKE
+                                    <div class="footer__mobile-about-heading-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </h3>
+                                <li class="footer__about-item">
+                                    <a href="" class="footer__about-link">News</a>
+                                </li>
+
+                                <li class="footer__about-item">
+                                    <a href="" class="footer__about-link">Careers</a>
+                                </li>
+
+                                <li class="footer__about-item">
+                                    <a href="" class="footer__about-link">Investors</a>
+                                </li>
+
+                                <li class="footer__about-item">
+                                    <a href="" class="footer__about-link">Sustainability</a>
+                                </li>
+
+                                <li class="footer__about-item">
+                                    <a href="" class="footer__about-link">Order Status</a>
+                                </li>
+                            </ul>
+
+                            <div class="footer__social">
+                                <a href="" class="footer__sosial-icon-link">
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                </a>
+                                <a href="" class="footer__sosial-icon-link">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                                <a href="" class="footer__sosial-icon-link">
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                </a>
+                                <a href="" class="footer__sosial-icon-link">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="footer__location">
+                                <div class="footer__location-item">
+                                    <a href="" class="footer__location-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p class="footer__location-country">United States</p>
+                                    </a>
+                                    <p class="footer__license">© 2022 Nike, Inc. All Rights Reserved</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="footer__tems">
+                                <div class="footer__tems-list">
+                                    <div class="footer__tems-item">
+                                        <a href="" class="footer__tems-item-link"> Guides </a>
+                                    </div>
+
+                                    <div class="footer__tems-item">
+                                        <a href="" class="footer__tems-item-link">Terms of Sale</a>
+                                    </div>
+
+                                    <div class="footer__tems-item">
+                                        <a href="" class="footer__tems-item-link">Terms of Use</a>
+                                    </div>
+
+                                    <div class="footer__tems-item">
+                                        <a href="" class="footer__tems-item-link">Nike Privacy Policy</a>
+                                    </div>
+
+                                    <div class="footer__tems-item">
+                                        <a href="" class="footer__tems-item-link">CA Supply Chains Act</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>

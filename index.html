@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/normallize.css" />
+    </head>
+    <body>
+        <form class="modal" id="form-1">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <header class="modal__header">
+                    <div class="modal__header-logo">
+                        <svg class="modal__header-logo-img" height="60px" width="60px" fill="#111" viewBox="0 0 69 32">
+                            <path
+                                d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <button class="modal__header-back">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </header>
+
+                <div class="modal__review">
+                    <h3 class="modal__header-slogan">BE THE FIST TO KNOW</h3>
+                    <p class="modal__header-introduce">
+                        sign up to Nike emails to be the fist to see inspirng content, new and exclusive offers.
+                    </p>
+                </div>
+
+                <div class="modal__content">
+                    <!-- nhap ten -->
+                    <div class="modal-item">
+                        <div class="modal-item--full">
+                            <span class="modal-item-heading">Login Name*</span>
+                            <label for="name" class="modal-label"></label>
+                            <input
+                                type="text"
+                                placeholder="Your login name"
+                                name="name"
+                                id="name"
+                                class="modal-item-input modal-item-input-full"
+                            />
+                            <span class="modal-message"></span>
+                        </div>
+                    </div>
+                    <!-- phan email -->
+                    <div class="modal-item">
+                        <div class="modal-item--full">
+                            <span class="modal-item-heading">Emails address*</span>
+                            <label for="mail" class="modal-label"></label>
+                            <input
+                                type="mail"
+                                placeholder="Emails address"
+                                name="email"
+                                id="email"
+                                class="modal-item-input modal-item-input-full"
+                            />
+                            <span class="modal-message"></span>
+                        </div>
+                    </div>
+
+                    <!-- phan password -->
+                    <div class="modal-item">
+                        <span class="modal-item-heading">Your Password*</span>
+                        <label for="password" class="modal-label"></label>
+
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            id="password"
+                            class="modal-item-input modal-item-input-full"
+                        />
+                        <span class="modal-message"></span>
+                    </div>
+
+                    <!-- phan nhap lai password -->
+                    <div class="modal-item">
+                        <span class="modal-item-heading">Confirm your password*</span>
+                        <label for="password__confimation" class="modal-label"></label>
+
+                        <input
+                            type="password"
+                            placeholder="Confirm password"
+                            id="password__confimation"
+                            class="modal-item-input modal-item-input-full"
+                        />
+                        <span class="modal-message"></span>
+                    </div>
+
+                    <!-- phan nhap ngay thang nam sinh -->
+                    <div class="modal-item">
+                        <span class="modal-item-heading">Date off birth*</span>
+                        <label for="date-of-birth" class="modal-label"></label>
+
+                        <input
+                            type="date"
+                            placeholder="mm/dd/yyy"
+                            id="date-of-birth"
+                            class="modal-item-input modal-item-input-full"
+                        />
+                        <span class="modal-message"></span>
+                    </div>
+
+                    <div class="modal__button">
+                        <button class="modal-sign-up__button">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <p class="modal__footer-rules">
+                        By signing up, you agree to Nike's
+                        <a class="modal__footer-link" href="">Privaci Policy</a>
+                        and
+                        <a class="modal__footer-link" href="">temps of user</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </body>
+    <script src="./validator.js"></script>
+    <script>
+        // Output nhan duoc
+        Validator({
+            form: '#form-1',
+            formModalItems: '.modal-item',
+            htmlMain: 'main.html',
+            rules: [
+                Validator.isRequired('#name'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 8),
+                Validator.isDate('#date-of-birth', 'Please enter your date of birth'),
+                Validator.isRequired('#password__confimation'),
+                Validator.isConfirmed(
+                    '#password__confimation',
+                    () => {
+                        return document.querySelector('#form-1 #password').value;
+                    },
+                    'your password is not true',
+                ),
+            ],
+
+            // neu co API thi su dung cai nay
+            // onSubmit: function (data) {
+            //     console.log(data);
+            // },
+        });
+    </script>
+</html>

@@ -1,0 +1,239 @@
+/* pc */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+/* mobile and tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        height: 0;
+    }
+
+    .nav__mobile {
+        display: block;
+    }
+
+    .nav__mobile .cart__container:hover {
+        border-radius: none;
+    }
+
+    .product__classify-typical {
+        margin-bottom: 20px;
+    }
+
+    .product__classify-typical-item-name,
+    .product__classify-typical-item-price {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .slider-text {
+        top: 25px;
+        margin-left: 25px;
+    }
+
+    .slider-text-introduce {
+        font-size: 2.8rem;
+    }
+
+    .product__classify-item--buy {
+        left: 21px;
+        bottom: 30px;
+    }
+
+    .product__classify-soccer-slogan {
+        margin-bottom: 0;
+    }
+
+    .product__classify-soccer-introduce {
+        font-size: 2.8rem;
+    }
+
+    .product__classify-item--section .product__classify-item-img {
+        height: 236px;
+    }
+
+    .business__body {
+        margin: 0px 20px;
+    }
+
+    .footer__social {
+        margin-top: 24px;
+        margin-left: 38px;
+    }
+
+    .footer-list,
+    .footer-help-list,
+    .footer__about-list {
+        max-width: 135px;
+    }
+
+    .footer__tems-list {
+        text-align: right;
+    }
+
+    .footer__location {
+        padding-left: 8px;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .container__introduce-item-heading {
+        text-align: center;
+    }
+
+    .slider__mobile {
+        display: block;
+    }
+
+    .product__classify-soccer__mobile {
+        display: block;
+    }
+
+    .product__classify {
+        padding: 0 12px;
+    }
+
+    .product__classify-item-introduce {
+        font-size: 1.5rem;
+    }
+
+    .product__classify-item--buy {
+        bottom: 35px;
+        left: 24px;
+    }
+
+    .product__classify-item--section .product__classify-item-img {
+        height: 100%;
+    }
+
+    .product-heading {
+        padding: 0 12px;
+    }
+
+    .product-heading-control {
+        display: inline-flex;
+        margin-top: 26px;
+    }
+
+    .business {
+        display: block;
+        padding: 0 12px;
+    }
+
+    .business__body {
+        margin: 0;
+    }
+
+    .footer {
+        padding: 40px 0 0 0;
+    }
+
+    .footer__body {
+        padding: 0 12px;
+    }
+
+    .footer-list {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    .footer-item {
+        padding: 8px 0;
+    }
+
+    .footer-help-item,
+    .footer__about-item {
+        display: none;
+    }
+
+    .footer-item-link {
+        display: block;
+        width: 100%;
+        line-height: 2;
+    }
+
+    .footer-help-list,
+    .footer__about-list {
+        width: 100%;
+    }
+
+    .footer__mobile-help-heading-icon,
+    .footer__mobile-about-heading-icon {
+        display: block;
+    }
+
+    .footer__social {
+        margin-left: 0;
+    }
+
+    .footer-list::after {
+        display: block;
+        content: '';
+        border: solid 1px #323232;
+        width: 100%;
+    }
+
+    .footer__location-item {
+        display: block;
+    }
+
+    .footer__location {
+        padding: 0 0 0 16px;
+    }
+
+    .footer__license,
+    .footer__location-country {
+        font-size: 0.8rem;
+    }
+
+    .footer__tems-list {
+        display: block;
+    }
+
+    .footer__tems-item-link {
+        font-size: 0.8rem;
+        line-height: 3;
+        display: block;
+        width: 100%;
+    }
+
+    .footer__tems-item {
+        padding: 8px 4px;
+    }
+
+    .add-cart-btn .cart-icon-left,
+    .add-cart-btn .cart-icon-right {
+        display: none;
+    }
+
+    .product__classify-typical-item-name,
+    .product__classify-typical-item-price {
+        font-size: 0.9rem;
+    }
+
+    .product__classify-typical-item__footer {
+        font-size: 0.9rem;
+    }
+}
